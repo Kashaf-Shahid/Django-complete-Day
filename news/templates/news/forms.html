@@ -1,0 +1,41 @@
+<html>
+ <head>
+
+    <title>Form</title>
+ </head>   
+<body>
+<form action="/home" method="post">
+{% csrf_token %}
+<div>
+    <label>Subject</label>
+</div>
+<div>
+    <input type ="text" name ="subject" maxlength= "200" required>
+</div>
+
+<div>
+    <label>Message</label>
+</div>
+<div>
+<textarea name ="message" >
+</textarea>
+</div>
+
+<div>
+    <label>Sender</label>
+</div>
+<div>
+    <input type ="emil" name ="sender"  required>
+</div>
+
+<div>
+    <label>CC</label>
+</div>
+<div>
+    <input type ="checkbox" name ="cc_myself" >
+</div>
+
+    <input type= "submit" value = "send">
+</form>
+</body>
+</html>
